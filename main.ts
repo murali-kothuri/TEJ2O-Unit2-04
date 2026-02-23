@@ -1,8 +1,19 @@
 /* Copyright (c) 2020 MTHS All rights reserved
  *
- * Created by: XXX
- * Created on: Sep 2020
- * This program ...
+ * Created by: Murali Kothuri
+ * Created on: Feb 2026
+ * This program simulates the current temperature
 */
 
-basic.showString('Hello, World!')
+// our variable for a random number
+let currentTemperature: number
+
+basic.clearScreen()
+basic.showIcon(IconNames.Happy)
+
+input.onButtonPressed(Button.A, function () {
+    currentTemperature = randint(1, 100)
+    basic.showString("The temperature is:")
+    basic.showNumber(input.temperature())
+    basic.showString("C")
+})
