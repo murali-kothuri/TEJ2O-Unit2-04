@@ -6,7 +6,7 @@
 */
 
 // our variable for a random number
-let currentTemperature: 21
+let currentTemperature = 0
 
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
