@@ -3,13 +3,13 @@
 * Created on: Feb 2026 *
 * This program simulates the current temperature */
 
-let currentTemperature = 0
+let currentTemperature : number
 
 basic.clearScreen()
 basic.showIcon(IconNames.Happy)
 
 input.onButtonPressed(Button.A, function () {
-    currentTemperature = randint(1, 100)
+    currentTemperature = input.temperature()
     basic.showString('The temperature is:')
     basic.showNumber(currentTemperature)
     basic.showString('C')
